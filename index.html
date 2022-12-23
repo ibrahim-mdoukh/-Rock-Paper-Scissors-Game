@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main css -->
+    <link rel="stylesheet" href="./master.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>(Rock, Paper, Scissors) Game</title>
+</head>
+
+<body>
+    <div class="game">
+        <h1>(Rock, Paper, Scissors) Game</h1>
+        <div class="player">
+            <h3>Player's choice</h3>
+            <div class="r-p-s">
+                <div class="r" id="my-r" onclick="game(this.id)">
+                    <img src="./img/حجر.png" alt="Rock">
+                </div>
+                <div class="p" id="my-p" onclick="game(this.id)">
+                    <img src="./img/ورقةة.png" alt="Paper">
+                </div>
+                <div class="s" id="my-s" onclick="game(this.id)">
+                    <img src="./img/مقص.png" alt="Scissors">
+                </div>
+            </div>
+        </div>
+        <div class="computer">
+            <h3>Computer's choice</h3>
+            <div class="r-p-s">
+                <div class="r" id="r">
+                    <img src="./img/حجر.png" alt="Rock">
+                </div>
+                <div class="p"id="p">
+                    <img src="./img/ورقةة.png" alt="Paper">
+                </div>
+                <div class="s"id="s">
+                    <img src="./img/مقص.png" alt="Scissors">
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <h3>The Result</h3>
+            <p id="result"></p>
+        </div>
+        <div class="reset">
+            <button onclick="location.reload()">Replay The Game</button>
+        </div>
+        <p>Ibrahim Mdoukh</p>
+    </div>
+    <script src="./master.js"></script>
+</body>
+
+</html>
